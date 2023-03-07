@@ -12,32 +12,16 @@
     --black: black;
 }
 
-.heading {
-    background-color: var(--black);
-    color: white;
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header-div {
+    background-color: black;
 }
 
-.title {
+.main-header {
     font-size: 2rem;
-    margin-left: 2rem;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
 }
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    /* padding: 6rem; */
-    /* margin-right: 30rem; */
-    font-size: 1rem;
-}
-
-.nav-list li {
-    padding: 1rem;
-}
-
 
 .main {
     height: 100vh;
@@ -47,6 +31,23 @@
 }
 
 .card {
-    height: 40rem;
+    height: 45rem;
     width: 30rem;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-btn {
+    padding: .5rem;
+    border-radius: .5rem;
+    width: 15rem;
+    background-color: black;
+    color: white;
+}
+
+.card-btn:hover {
+    background-color: white;
+    color: black;
 }
