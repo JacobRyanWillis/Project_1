@@ -7,23 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Digital Personal Trainer</title>
 </head>
 
 <body>
-    <header class="heading">
-        <h1 class="title">Fitness</h1>
-        <ul class="nav-list">
-            <li>About Us</li>
-            <li>Exercises</li>
-            <li>Nutrition</li>
-        </ul>
-    </header>
-    <section>
-        <h2>Test</h2>
-    </section>
-    <section>
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="./assets/images/logo2.png" width="112" height="28">
+            </a>
 
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu p-2">
+            <div class="navbar-end">
+                <a class="navbar-item is-size-5">
+                    About Us
+                </a>
+
+                <a class="navbar-item is-size-5">
+                    Exercises
+                </a>
+
+                <a class="navbar-item is-size-5">
+                    Nutrition
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <img src="./assets/images/hero-image-4.webp">
+        <!-- <div class="hero-body">
+            <img class="logo" src="./assets/images/logo2.png">
+        </div> -->
+    </section>
+    <section class="main has-background-black">
+        <div class="card">
+            <div class="card-content">
+                <p class="title">
+                    “There are two hard things in computer science: cache invalidation, naming things, and off-by-one
+                    errors.”
+                </p>
+                <p class="subtitle">
+                    Jeff Atwood
+                </p>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                    <span>
+                        View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                    </span>
+                </p>
+                <p class="card-footer-item">
+                    <span>
+                        Share on <a href="#">Facebook</a>
+                    </span>
+                </p>
+            </footer>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <p class="title">
+                    “There are two hard things in computer science: cache invalidation, naming things, and off-by-one
+                    errors.”
+                </p>
+                <p class="subtitle">
+                    Jeff Atwood
+                </p>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                    <span>
+                        View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                    </span>
+                </p>
+                <p class="card-footer-item">
+                    <span>
+                        Share on <a href="#">Facebook</a>
+                    </span>
+                </p>
+            </footer>
+        </div>
     </section>
 
 
