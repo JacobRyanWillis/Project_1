@@ -1,3 +1,5 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
 *,
 *::before,
 *::after {
@@ -34,4 +36,17 @@
 
 .nav-list li {
     padding: 1rem;
+}
+
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    height: 40rem;
+    width: 30rem;
 }
