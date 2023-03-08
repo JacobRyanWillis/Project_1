@@ -38,16 +38,29 @@ h1 {
 
 .subtitle {
     font-size: 30px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-style: italic;
     margin-left: 40px;
 }
 
-.nutrition {
-    
+.nutrition {}
+
+.nutrition-plan {}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5rem;
 }
 
-.nutrition-plan {
+.card {
+    height: 35rem;
+    width: 25rem;
+}
 
+.card-content {
+    text-align: center;
 }

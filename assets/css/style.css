@@ -12,10 +12,6 @@
     --black: black;
 }
 
-.header-div {
-    background-color: black;
-}
-
 .main-header {
     font-size: 2rem;
     color: white;
@@ -73,4 +69,11 @@
 #logo {
     height: 50%;
     width: 50%;
+}
+
+.copyright {
+    /* background-color: black; */
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
