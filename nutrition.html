@@ -1,113 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/nutritionStyle.css" />
-    <link
-      rel="stylesheet"
-      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-    <style>
-      fieldset {
-        border: 0;
-      }
-      label {
-        display: block;
-        margin: 30px 0 0 0;
-      }
-      .overflow {
-        height: 200px;
-      }
-    </style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/nutritionStyle.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-    <script>
-      $(function () {
-        $("#diet").selectmenu();
+  <style>
+    fieldset {
+      border: 0;
+    }
 
-        $("#intolerance").selectmenu();
-      });
-    </script>
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <h1>Nutrition & Recipes</h1>
-    </header>
+    label {
+      display: block;
+      margin: 30px 0 0 0;
+    }
 
-    <main>
+    .overflow {
+      height: 200px;
+    }
+  </style>
 
-      <div class="health-is-wealth">
-        <h2>Health is Wealth!</h2>
-        <h2>"Eat well, Live well"</h2>
+  <script>
+    $(function () {
+      $("#diet").selectmenu();
+
+      $("#intolerance").selectmenu();
+    });
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>Nutrition & Recipes</h1>
+  </header>
+  <div class="health-is-wealth has-background-black">
+    <h2 class="title">Health is Wealth!</h2>
+    <h2 class="subtitle">"Eat well, Live well"</h2>
+  </div>
+  <main class="main has-background-black">
+    <div class="card has-background-primary-light">
+      <div class="card-content">
+        <p class="title">
+          Why is nutrition so important?
+        </p>
       </div>
-      <div class="demo">
-        <form action="#">
-          <br>
-          <section class="nutrition row">
-            <h3>Why NUTRITION is so important?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur <br>
-              adipisicing elit. Deleniti facere recusandae <br> eaque
-              quaerat porro explicabo, reprehenderit <br> iure fugit alias quis magnam consequatur <br> iusto vitae
-              a iste minus soluta ratione quas?</p>
-          </section>
-          <br>
-          <section class="nutrition-plan row">
-            <h3>Are you looking for a nutrition plan?</h3>
-            <h4></h4>Vegetarian</h4><button><i>Launch</i></button><br>
-            <h4></h4>Vegan</h4><button><i>Launch</i></button><br>
-            <h4></h4>Pescatarian</h4> <button><i>Launch</i></button><br>
-            <h4></h4>Paleo</h4><button><i>Launch</i></button><br>
-             <br> 
-            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Ex modi id totam reiciendis <br>
-               debitis consequuntur ducimus fugit veritatis <br> eveniet alias cum velit, amet dolor. Quaerat <br> 
-               numquam praesentium alias quia dignissimos!</p>
-          </section>
-          <img src="./assets/images/VEGAN.jpg" alt="Vegan Food Layout" width="500" height="300">
-          <img src="./assets/images/avocado-and-quinoa-salad-with-chia-seeds.jpg" alt="Vegetarian Salad in a wooden bowl" width="500" height="300">
-          
-      <div class="demo">
-        <form action="#">
-          <fieldset>
-            <label for="diet">Choose Your Diet</label>
-            <select name="diet" id="diet">
-              <option selected="selected">Vegetarian</option>
-              <option>Pescatarian</option>
-              <option>Vegan</option>
-              <option>Paleo</option>
-            </select>
 
-            <label for="intolerance">Select your intolerances</label>
-            <select name="intolerance" id="intolerance">
-              <option value="jquery">Eggs</option>
-              <option value="jqueryui">Dairy</option>
-              <option value="somefile">gluten</option>
-              <option value="peanut">Peanuts</option>
-            </select>
-
-            <!-- <label for="number">Select a Calorie Range</label> -->
-            <form id="min-calories">
-              <label for="">Minimum calories</label>
-              <input type="text" class="min-input" />
-            </form>
-
-            <form id="max-calories">
-              <label for=""> Maximum calories</label>
-              <input type="text" class="max-input" />
-            </form>
-
-            <button class="submit_button">Submit</button>
-          </fieldset>
-        </form>
-        <div class="results">
-        </div>
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
+          quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
+          consequatur, amet omnis!</p>
       </div>
-    </main>
-    <script src="./assets/js/nutritionScript.js"></script>
-  </body>
+    </div>
+    <div class="card has-background-primary-light">
+      <div class="card-content">
+        <p class="title">
+          Are you looking for a nutrition plan?
+        </p>
+      </div>
+
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
+          quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
+          consequatur, amet omnis!</p>
+      </div>
+    </div>
+    <div class="card has-background-primary-light">
+      <div class="card-content">
+        <p class="title">
+          Are you looking for a nutrition plan?
+        </p>
+      </div>
+
+      <div class="card-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
+          quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
+          consequatur, amet omnis!</p>
+      </div>
+    </div>
+
+  </main>
+  <section>
+    <div class="demo">
+      <form action="#">
+        <fieldset>
+          <label for="diet">Choose Your Diet</label>
+          <select name="diet" id="diet">
+            <option selected="selected">Vegetarian</option>
+            <option>Pescatarian</option>
+            <option>Vegan</option>
+            <option>Paleo</option>
+          </select>
+
+          <label for="intolerance">Select your intolerances</label>
+          <select name="intolerance" id="intolerance">
+            <option value="jquery">Eggs</option>
+            <option value="jqueryui">Dairy</option>
+            <option value="somefile">gluten</option>
+            <option value="peanut">Peanuts</option>
+          </select>
+
+          <!-- <label for="number">Select a Calorie Range</label> -->
+          <form id="min-calories">
+            <label for="">Minimum calories</label>
+            <input type="text" class="min-input" />
+          </form>
+
+          <form id="max-calories">
+            <label for=""> Maximum calories</label>
+            <input type="text" class="max-input" />
+          </form>
+
+          <button class="submit_button">Submit</button>
+        </fieldset>
+      </form>
+      <div class="results">
+      </div>
+    </div>
+  </section>
+
+  <script src="./assets/js/nutritionScript.js"></script>
+</body>
+
 </html>

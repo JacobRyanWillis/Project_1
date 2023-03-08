@@ -1,1 +1,18 @@
-.backcard { box-shadow: 0 4px 8px 0 #000000;}
+body {background-color: black;}
+
+
+
+.back-container {background-color: aliceblue;
+                width: 300px;}
+
+.chest-container {background-color: aliceblue;
+                width: 300px;}
+
+.abs-container {background-color: aliceblue;
+                    width: 300px;}
+.column{float: left;
+    padding: 5px;}
+
+.row ::after {content: "";
+clear: both;
+display: table;}

@@ -12,10 +12,6 @@
     --black: black;
 }
 
-.header-div {
-    background-color: black;
-}
-
 .main-header {
     font-size: 2rem;
     color: white;
@@ -50,4 +46,34 @@
 .card-btn:hover {
     background-color: white;
     color: black;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/assets/images/hero-image-8.webp");
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#logo {
+    height: 50%;
+    width: 50%;
+}
+
+.copyright {
+    /* background-color: black; */
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
