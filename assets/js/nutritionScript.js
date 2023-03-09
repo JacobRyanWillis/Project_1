@@ -5,21 +5,33 @@
 // 
 
 var skillsSelect = document.getElementById("diet");
-var selectedTextDiet = skillsSelect.options[skillsSelect.selectedIndex].text;
-
-
 var intolleranceSelect = document.getElementById("intolerance");
-var selectedTextIntollerance = intolleranceSelect.options[intolleranceSelect.selectedIndex].text;
 
 
-
-//"https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?diet=vegetarian&intolerances=gluten&minCalories=50&maxCalories=800"
-
-var spooge;
+var apiCall;
 var currIndex;
 
 $(".submit_button").on("click", function(event) {
 	event.preventDefault();
+
+	var selectedTextDiet = skillsSelect.options[skillsSelect.selectedIndex].text;
+	// I added code to parse through the checkbox options and add them as input
+	var selectedTextIntollerance = "";
+
+	var markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked');  
+
+	if (markedCheckbox.length == 1) {
+		for (var checkbox of markedCheckbox) {
+			  
+			selectedTextIntollerance += checkbox.names;
+		}  
+	} else if (markedCheckbox.length > 1) {
+		for (var checkbox of markedCheckbox) {  
+			selectedTextIntollerance += "&intolerances=";
+			selectedTextIntollerance += checkbox.names + "%2C%20";
+		}
+	}
+	
 	var minCalories = $(".min-input").val();
 	var maxCalories = $(".max-input").val();
 	if (minCalories == "" || maxCalories == "") {
@@ -27,11 +39,11 @@ $(".submit_button").on("click", function(event) {
 	} else if (isNaN(minCalories) || isNaN(maxCalories)) {
 		return;
 	} else {
-		spooge = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?diet=" + selectedTextDiet + "&intolerances=" + selectedTextIntollerance + "&minCalories=" + minCalories + "&maxCalories=" + maxCalories;
+		apiCall = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?diet=" + selectedTextDiet + selectedTextIntollerance + "&minCalories=" + minCalories + "&maxCalories=" + maxCalories;
 		const settings = {
 			"async": true,
 			"crossDomain": true,
-			"url": spooge,
+			"url": apiCall,
 			"method": "GET",
 			"headers": {
 				"X-RapidAPI-Key": "0d7d04e9cemsh2554cf8f16e8e5bp103adejsn5ce9403882f6",
@@ -40,8 +52,6 @@ $(".submit_button").on("click", function(event) {
 		};
 		
 		$.ajax(settings).done(function (response) {
-			console.log(response);
-			console.log(response.results.length);
 			var randIdx = Math.floor(Math.random() * response.results.length);
 			currIndex = response.results[randIdx].id;
 			$(".results").children("img").remove();
@@ -50,8 +60,6 @@ $(".submit_button").on("click", function(event) {
 
 			getRecipe(currIndex)
 		});
-
-		// turn these into functions 
 		
 		function getRecipe(id) {
 			var settings2 = {
@@ -66,7 +74,7 @@ $(".submit_button").on("click", function(event) {
 			};
 			
 			$.ajax(settings2).done(function (response2) {
-				// console.log(response2);
+				console.log(response2);
 				$(".results").children("h2").remove();
 				$(".results").children("a").remove();
 
@@ -75,10 +83,7 @@ $(".submit_button").on("click", function(event) {
 				var recipeLink = $('<a href="'+recipleRealLink+'">'+'link to the recipe'+'</a>');
 				$(".results").append(recipeTitle, recipeLink);
 			});
-		}
-		
-		
+		}	
 	}
-
 })
 
