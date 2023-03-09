@@ -1,131 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/nutritionStyle.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/nutritionStyle.css" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <style>
+      fieldset {
+        border: 0;
+      }
 
-  <style>
-    fieldset {
-      border: 0;
-    }
+      label {
+        display: block;
+        margin: 30px 0 0 0;
+      }
 
-    label {
-      display: block;
-      margin: 30px 0 0 0;
-    }
+      .overflow {
+        height: 200px;
+      }
 
-    .overflow {
-      height: 200px;
-    }
-  </style>
+      .ui-controlgroup-vertical {
+        width: 150px;
+      }
+      .ui-controlgroup.ui-controlgroup-vertical > button.ui-button,
+      .ui-controlgroup.ui-controlgroup-vertical > .ui-controlgroup-label {
+        text-align: center;
+      }
+      #car-type-button {
+        width: 120px;
+      }
+      .ui-controlgroup-horizontal .ui-spinner-input {
+        width: 20px;
+      }
+    </style>
 
-  <script>
-    $(function () {
-      $("#diet").selectmenu();
+    <script>
+      $(function () {
+        $("#diet").selectmenu();
 
-      $("#intolerance").selectmenu();
-    });
-  </script>
-  <title>Document</title>
-</head>
+        $("#intolerance").selectmenu();
+      });
+    </script>
 
-<body>
-  <header>
-    <h1>Nutrition & Recipes</h1>
-  </header>
-  <div class="health-is-wealth has-background-black">
-    <h2 class="title">Health is Wealth!</h2>
-    <h2 class="subtitle">"Eat well, Live well"</h2>
-  </div>
-  <main class="main has-background-black">
-    <div class="card has-background-primary-light">
-      <div class="card-content">
-        <p class="title">
-          Why is nutrition so important?
-        </p>
-      </div>
+    <title>Document</title>
+  </head>
 
-      <div class="card-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
-          quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
-          consequatur, amet omnis!</p>
-      </div>
+  <body>
+    <header>
+      <h1>Nutrition & Recipes</h1>
+    </header>
+    <div class="health-is-wealth has-background-black">
+      <h2 class="title">Health is Wealth!</h2>
+      <h2 class="subtitle">"Eat well, Live well"</h2>
     </div>
-    <div class="card has-background-primary-light">
-      <div class="card-content">
-        <p class="title">
-          Are you looking for a nutrition plan?
-        </p>
+    <main class="main has-background-black">
+      <div class="card has-background-primary-light">
+        <div class="card-content">
+          <p class="title">Why is nutrition so important?</p>
+        </div>
+
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            laboriosam dignissimos nam reiciendis quod ea ex, voluptate
+            recusandae perferendis nihil natus adipisci dolor iure eveniet
+            dolorum, sit consequatur, amet omnis!
+          </p>
+        </div>
       </div>
+      <div class="card has-background-primary-light">
+        <div class="card-content">
+          <p class="title">Are you looking for a nutrition plan?</p>
+        </div>
 
-      <div class="card-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
-          quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
-          consequatur, amet omnis!</p>
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            laboriosam dignissimos nam reiciendis quod ea ex, voluptate
+            recusandae perferendis nihil natus adipisci dolor iure eveniet
+            dolorum, sit consequatur, amet omnis!
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="card has-background-primary-light">
-      <div class="card-content">
-        <p class="title">
-          Are you looking for a nutrition plan?
-        </p>
+      <div class="card has-background-primary-light">
+        <div class="card-content">
+          <p class="title">Are you looking for a nutrition plan?</p>
+        </div>
+
+        <div class="card-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            laboriosam dignissimos nam reiciendis quod ea ex, voluptate
+            recusandae perferendis nihil natus adipisci dolor iure eveniet
+            dolorum, sit consequatur, amet omnis!
+          </p>
+        </div>
       </div>
+    </main>
+    <section>
+      <div class="demo">
+        <form action="#">
+          <fieldset>
+            <label for="diet">Choose Your Diet</label>
+            <select name="diet" id="diet">
+              <option selected="selected">Vegetarian</option>
+              <option>Pescatarian</option>
+              <option>Vegan</option>
+              <option>Paleo</option>
+            </select>
 
-      <div class="card-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
-          quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
-          consequatur, amet omnis!</p>
+            <!-- I added some code to change the intolerance section from a dropdown menu to a checkbox setup -->
+            <label for="intolerance">Select any dietary intolerances</label>
+
+            <label for="checkbox-1">Peanuts</label>
+            <input type="checkbox" name="peanuts" id="checkbox-1" class="c2" />
+
+            <label for="checkbox-2">Dairy</label>
+            <input type="checkbox" name="dairy" id="checkbox-2" class="c2" />
+
+            <label for="checkbox-3">Gluten</label>
+            <input type="checkbox" name="gluten" id="checkbox-3" class="c2" />
+            <br />
+            <label for="checkbox-4">Eggs</label>
+            <input type="checkbox" name="eggs" id="checkbox-4" class="c2" />
+
+            <label for="checkbox-5">Shellfish</label>
+            <input
+              type="checkbox"
+              name="shellfish"
+              id="checkbox-5"
+              class="c2"
+            />
+
+            <label for="checkbox-6">Soy</label>
+            <input type="checkbox" name="Soy" id="checkbox-6" class="c2" />
+
+            <form id="min-calories">
+              <label for="">Minimum calories</label>
+              <input type="text" class="min-input" />
+            </form>
+
+            <form id="max-calories">
+              <label for=""> Maximum calories</label>
+              <input type="text" class="max-input" />
+            </form>
+
+            <button class="submit_button">Submit</button>
+          </fieldset>
+        </form>
+        <div class="results"></div>
       </div>
-    </div>
+    </section>
 
-  </main>
-  <section>
-    <div class="demo">
-      <form action="#">
-        <fieldset>
-          <label for="diet">Choose Your Diet</label>
-          <select name="diet" id="diet">
-            <option selected="selected">Vegetarian</option>
-            <option>Pescatarian</option>
-            <option>Vegan</option>
-            <option>Paleo</option>
-          </select>
-
-          <label for="intolerance">Select your intolerances</label>
-          <select name="intolerance" id="intolerance">
-            <option value="jquery">Eggs</option>
-            <option value="jqueryui">Dairy</option>
-            <option value="somefile">gluten</option>
-            <option value="peanut">Peanuts</option>
-          </select>
-
-          <!-- <label for="number">Select a Calorie Range</label> -->
-          <form id="min-calories">
-            <label for="">Minimum calories</label>
-            <input type="text" class="min-input" />
-          </form>
-
-          <form id="max-calories">
-            <label for=""> Maximum calories</label>
-            <input type="text" class="max-input" />
-          </form>
-
-          <button class="submit_button">Submit</button>
-        </fieldset>
-      </form>
-      <div class="results">
-      </div>
-    </div>
-  </section>
-
-  <script src="./assets/js/nutritionScript.js"></script>
-</body>
-
+    <script src="./assets/js/nutritionScript.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".r2, .c2").checkboxradio({});
+      });
+    </script>
+  </body>
 </html>
