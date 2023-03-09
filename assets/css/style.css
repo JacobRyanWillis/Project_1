@@ -4,7 +4,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'M PLUS 2', sans-serif;
     margin: 0;
 }
 
@@ -16,7 +16,12 @@
     font-size: 2rem;
     color: white;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
+}
+
+.main-p {
+    color: white;
+    text-align: center;
 }
 
 .main {
@@ -24,6 +29,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 5rem;
 }
 
 .card {
@@ -52,13 +58,16 @@
     display: flex;
     flex-direction: column;
     background-image: url("/assets/images/hero-image-8.webp");
-    height: 100vh;
+    height: 80vh;
     align-self: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
+    -webkit-filter: grayscale(50%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
 }
 
 .hero-body {
@@ -76,4 +85,14 @@
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+.logo-nav {
+    padding-left: 2rem;
+    height: 70px;
+    width: 200px;
+}
+
+.it-span {
+    color: #FEC9FB;
 }
