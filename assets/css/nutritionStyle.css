@@ -36,12 +36,17 @@ h1 {
     margin-left: 20px;
 }
 
+#title-line {
+    color: lightgrey;
+}
+
 .subtitle {
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-style: italic;
     margin-left: 40px;
+    color: lightgrey;
 }
 
 .nutrition {}
@@ -65,6 +70,14 @@ h1 {
     text-align: center;
 }
 
-.test {
-    
+.nutrition1-img {
+
+}
+
+.nutrition2-img {
+    margin-top: 30px;
+}
+
+.nutrition3-img {
+    margin-top: 60px;
 }
