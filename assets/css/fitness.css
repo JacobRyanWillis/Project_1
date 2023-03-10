@@ -78,7 +78,7 @@ body {
     color: black;
 }
 
-.card-image {
+.card-images {
     display: flex;
     justify-content: center;
 }
@@ -86,3 +86,17 @@ body {
 .card-footer-item {
     margin: 1rem;
 }
+
+.disclaimer {text-align: center;
+    font-size: 1rem;
+    color: grey;}
+
+
+    .copyright {
+        /* background-color: black; */
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }    
+
+.it-head {color: #5882F8}
