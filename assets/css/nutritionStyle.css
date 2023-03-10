@@ -83,8 +83,22 @@ h1 {
     width: 100%;
 }
 
+.recipe-holder {
+    display: flex;
+    flex-direction: row;
+}
+
 .demo {
     margin-left: 10px;
+}
+
+.demo h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.topLabel {
+    margin-top: 0px;
 }
 
 .results {
@@ -105,6 +119,19 @@ h1 {
 .results .favoriteButton {
     max-width: fit-content;
 }
+
+.local-favorites {
+    min-width: 50vh;
+    position: absolute;
+    right: 0%;
+}
+
+.local-favorites h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+
+}
+
 
 footer {
     font-weight: bold;
