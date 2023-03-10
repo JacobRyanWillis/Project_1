@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/nutritionStyle.css" />
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
@@ -45,120 +47,114 @@
   </div>
   <main class="main has-background-black">
     <div class="card has-background-primary-light">
-      <div class="card-content">
+      <div class="card-contents">
         <p class="title">
-          Why is nutrition so important?
+          Why Consider Nutrition?
         </p>
-        <div class="card-content">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
-            quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
-            consequatur!</p>
-        </div>
-        <div class="nutrition1-img">
-          <img src="./assets/images/pasted_image_0.png" alt="Weight with measuring tape and veggie plate">
-        </div>
       </div>
-      <!-- <div class="card-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
+      <div class="nutrition1-img">
+        <img src="./assets/images/pasted_image_0.png" alt="Weight with measuring tape and veggie plate">
+      </div>
+      <div class="card-content">
+        <p>Are you looking for a nutrition plan?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
           quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
           consequatur, amet omnis!</p>
-      </div> -->
-      
+
+      </div>
     </div>
     <div class="card has-background-primary-light">
-      <div class="card-content">
+      <div class="card-contents">
         <p class="title">
           Love at First Bite!<br>
         </p>
       </div>
-
+      <div class="nutrition2-img">
+        <img src="./assets/images/avocado-and-quinoa-salad-with-chia-seeds.jpg" alt="Vegetarian Salad in a wooden bowl">
+      </div>
       <div class="card-content">
-        <p>Are you looking for a nutrition plan? 
+        <p>Are you looking for a nutrition plan?
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
           quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
           consequatur, amet omnis!</p>
-          <div class="nutrition2-img">
-          <img src="./assets/images/avocado-and-quinoa-salad-with-chia-seeds.jpg" alt="Vegetarian Salad in a wooden bowl">
-        </div>
+
       </div>
     </div>
+
+    </div>
     <div class="card has-background-primary-light">
-      <div class="card-content">
+      <div class="card-contents">
         <p class="title">
           Eat it or Leave it?
         </p>
       </div>
-
+      <div class="nutrition3-img">
+        <img src="./assets/images/VEGAN.jpg" alt="Vegan Food Layout">
+      </div>
       <div class="card-content">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio laboriosam dignissimos nam reiciendis
           quod ea ex, voluptate recusandae perferendis nihil natus adipisci dolor iure eveniet dolorum, sit
           consequatur, amet omnis!</p>
-          <div class="nutrition3-img">
-            <img src="./assets/images/VEGAN.jpg" alt="Vegan Food Layout">
-          </div>
+
       </div>
-    </main>
-    <section>
-      <div class="demo">
-        <form action="#">
-          <fieldset>
-            <label for="diet">Choose Your Diet</label>
-            <select name="diet" id="diet">
-              <option selected="selected">Vegetarian</option>
-              <option>Pescatarian</option>
-              <option>Vegan</option>
-              <option>Paleo</option>
-            </select>
+  </main>
+  <section>
+    <div class="demo">
+      <form action="#">
+        <fieldset>
+          <label for="diet">Choose Your Diet</label>
+          <select name="diet" id="diet">
+            <option selected="selected">Vegetarian</option>
+            <option>Pescatarian</option>
+            <option>Vegan</option>
+            <option>Paleo</option>
+          </select>
 
-            <!-- I added some code to change the intolerance section from a dropdown menu to a checkbox setup -->
-            <label for="intolerance">Select any dietary intolerances</label>
+          <!-- I added some code to change the intolerance section from a dropdown menu to a checkbox setup -->
+          <label for="intolerance">Select any dietary intolerances</label>
 
-            <label for="checkbox-1">Peanuts</label>
-            <input type="checkbox" name="peanuts" id="checkbox-1" class="c2" />
+          <label for="checkbox-1">Peanuts</label>
+          <input type="checkbox" name="peanuts" id="checkbox-1" class="c2" />
 
-            <label for="checkbox-2">Dairy</label>
-            <input type="checkbox" name="dairy" id="checkbox-2" class="c2" />
+          <label for="checkbox-2">Dairy</label>
+          <input type="checkbox" name="dairy" id="checkbox-2" class="c2" />
 
-            <label for="checkbox-3">Gluten</label>
-            <input type="checkbox" name="gluten" id="checkbox-3" class="c2" />
-            <br />
-            <label for="checkbox-4">Eggs</label>
-            <input type="checkbox" name="eggs" id="checkbox-4" class="c2" />
+          <label for="checkbox-3">Gluten</label>
+          <input type="checkbox" name="gluten" id="checkbox-3" class="c2" />
+          <br />
+          <label for="checkbox-4">Eggs</label>
+          <input type="checkbox" name="eggs" id="checkbox-4" class="c2" />
 
-            <label for="checkbox-5">Shellfish</label>
-            <input
-              type="checkbox"
-              name="shellfish"
-              id="checkbox-5"
-              class="c2"
-            />
+          <label for="checkbox-5">Shellfish</label>
+          <input type="checkbox" name="shellfish" id="checkbox-5" class="c2" />
 
-            <label for="checkbox-6">Soy</label>
-            <input type="checkbox" name="Soy" id="checkbox-6" class="c2" />
+          <label for="checkbox-6">Soy</label>
+          <input type="checkbox" name="Soy" id="checkbox-6" class="c2" />
 
-            <form id="min-calories">
-              <label for="">Minimum calories</label>
-              <input type="text" class="min-input" />
-            </form>
+          <form id="min-calories">
+            <label for="">Minimum calories</label>
+            <input type="text" class="min-input" />
+          </form>
 
-            <form id="max-calories">
-              <label for=""> Maximum calories</label>
-              <input type="text" class="max-input" />
-            </form>
+          <form id="max-calories">
+            <label for=""> Maximum calories</label>
+            <input type="text" class="max-input" />
+          </form>
 
-            <button class="submit_button">Submit</button>
-          </fieldset>
-        </form>
-        <div class="results"></div>
-      </div>
-    </section>
+          <button class="submit_button">Submit</button>
+        </fieldset>
+      </form>
+      <div class="results"></div>
+    </div>
+  </section>
 
-    <script src="./assets/js/nutritionScript.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".r2, .c2").checkboxradio({});
-      });
-    </script>
-  </body>
-  <footer>©Go For Fitness</footer>
+  <script src="./assets/js/nutritionScript.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".r2, .c2").checkboxradio({});
+    });
+  </script>
+</body>
+<footer>©Go For Fitness</footer>
+
 </html>
