@@ -12,6 +12,14 @@
     --black: black;
 }
 
+/* navbar styles */
+.logo-nav {
+    padding-left: 2rem;
+    height: 70px;
+    width: 200px;
+}
+
+/* main styles */
 .main-header {
     font-size: 2rem;
     color: white;
@@ -32,28 +40,7 @@
     padding-bottom: 5rem;
 }
 
-.card {
-    height: 45rem;
-    width: 30rem;
-}
-
-.card-content {
-    text-align: center;
-}
-
-.card-btn {
-    padding: .5rem;
-    border-radius: .5rem;
-    width: 15rem;
-    background-color: black;
-    color: white;
-}
-
-.card-btn:hover {
-    background-color: white;
-    color: black;
-}
-
+/* hero styles */
 .hero {
     display: flex;
     flex-direction: column;
@@ -79,17 +66,55 @@
     width: 50%;
 }
 
+/* card styles */
+.card {
+    height: 45rem;
+    width: 30rem;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-btn {
+    padding: .5rem;
+    border-radius: .5rem;
+    width: 15rem;
+    background-color: black;
+    color: white;
+}
+
+.card-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* about us styles */
+.title {
+    margin: 0;
+}
+
+.about-title {
+    color: white;
+    text-align: center;
+}
+
+.hero-2 {
+    background-image: url("/assets/images/meditate-about-us.jpeg");
+}
+
+.card-2 {
+    height: 30rem;
+}
+
+
+
+/* footer styles */
 .copyright {
     /* background-color: black; */
     color: white;
     text-align: center;
     padding: 1rem;
-}
-
-.logo-nav {
-    padding-left: 2rem;
-    height: 70px;
-    width: 200px;
 }
 
 .it-span {

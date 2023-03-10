@@ -19,6 +19,10 @@ header {
     color: white;
 }
 
+.it-head {
+    color: #5882F8;
+}
+
 h1 {
     font-size: 30px;
 }
@@ -27,13 +31,16 @@ h1 {
     font-size: 20px;
     padding: 5px;
     margin-top: 10px;
-
 }
 
 .title {
     font-size: 30px;
     font-weight: bold;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+}
+
+#title-line {
+    color: lightgrey;
 }
 
 .subtitle {
@@ -42,11 +49,12 @@ h1 {
     font-weight: bold;
     font-style: italic;
     margin-left: 40px;
+    color: lightgrey;
 }
 
-.nutrition {}
+/* .nutrition {}
 
-.nutrition-plan {}
+.nutrition-plan {} */
 
 .main {
     height: 100vh;
@@ -63,7 +71,24 @@ h1 {
 
 .card-content {
     text-align: center;
+    margin-top: 40px;
 }
+
+
+.nutrition1-img {
+    margin-bottom: 50px;
+
+}
+
+.nutrition2-img {
+    margin-top: 30px;
+}
+
+.nutrition3-img {
+    margin-top: 60px;
+
+}
+
 
 .demo {
     margin-left: 10px;
@@ -88,6 +113,9 @@ h1 {
     max-width: fit-content;
 }
 
-.test {
-    
+footer {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
 }
