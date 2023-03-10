@@ -65,6 +65,29 @@ h1 {
     text-align: center;
 }
 
+.demo {
+    margin-left: 10px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.results img {
+    max-width: 40vh;
+    margin-bottom: 10px;
+}
+
+.results a {
+    font-size: 20px;
+}
+
+.results .favoriteButton {
+    max-width: fit-content;
+}
+
 .test {
     
 }
