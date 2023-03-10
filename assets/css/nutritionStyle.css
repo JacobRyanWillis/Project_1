@@ -36,7 +36,8 @@ h1 {
 .title {
     font-size: 30px;
     font-weight: bold;
-    /* margin-left: 20px; */
+    padding: 1rem;
+    margin-bottom: 0;
 }
 
 #title-line {
@@ -69,26 +70,18 @@ h1 {
     width: 25rem;
 }
 
-.card-content {
+.card-contents {
     text-align: center;
-    margin-top: 40px;
 }
 
+.card-contents-1 {
+    text-align: center;
+    margin: 0;
+}
 
 .nutrition1-img {
-    margin-bottom: 50px;
-
+    width: 100%;
 }
-
-.nutrition2-img {
-    margin-top: 30px;
-}
-
-.nutrition3-img {
-    margin-top: 60px;
-
-}
-
 
 .demo {
     margin-left: 10px;
