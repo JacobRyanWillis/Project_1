@@ -48,9 +48,9 @@ h1 {
     color: lightgrey;
 }
 
-.nutrition {}
+/* .nutrition {}
 
-.nutrition-plan {}
+.nutrition-plan {} */
 
 .main {
     height: 100vh;
@@ -68,10 +68,9 @@ h1 {
 .card-content {
     text-align: center;
 }
+/* .nutrition1-img {
 
-.nutrition1-img {
-
-}
+} */
 
 .nutrition2-img {
     margin-top: 30px;
@@ -79,11 +78,29 @@ h1 {
 
 .nutrition3-img {
     margin-top: 60px;
+
 }
 
-footer {
-    font-weight: bold;
+
+.demo {
+    margin-left: 10px;
+}
+
+.results {
     display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.results img {
+    max-width: 40vh;
+    margin-bottom: 10px;
+}
+
+.results a {
+    font-size: 20px;
+}
+
+.results .favoriteButton {
+    max-width: fit-content;
 }

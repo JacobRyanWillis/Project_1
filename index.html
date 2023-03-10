@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Digital Personal Trainer</title>
 </head>
@@ -14,8 +14,8 @@
 <body>
     <nav class="navbar is-black" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                <img src="./assets/images/Go For Fitness-logos_white.png" width="112" height="28" class="logo-nav">
+            <a href="#">
+                <img src="./assets/images/go-for-fitness-logo-5.png" class="logo-nav">
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
@@ -42,15 +42,17 @@
             </div>
         </div>
     </nav>
-    <section class="hero is-danger is-fullheight">
+    <section class="hero is-success is-halfheight">
         <div class="hero-body" id="logo">
             <img src="./assets/images/Go For Fitness-logos_white.png">
         </div>
     </section>
     <div class="header-div">
-        <h2 class="main-header has-background-black">We're here to help...</h2>
+        <h2 class="main-header has-background-black"><span class="it-span">Go For</span> F<span
+                class="it-span">it</span>ness</h2>
+        <p class=" main-p has-background-black">We are here to help you embark on your fitness journey</p>
     </div>
-    <section class="main has-background-black">
+    <section class="main has-background-black pb-10">
         <div class="card has-background-primary-light">
             <div class="card-content">
                 <p class="title">
@@ -70,7 +72,7 @@
             </div>
             <footer class="card-footer">
                 <p class="card-footer-item">
-                    <button class="card-btn">
+                    <button id='fitnessBtn' class="card-btn">
                         Make My Workout Plan!
                     </button>
                 </p>
@@ -95,7 +97,7 @@
             </div>
             <footer class="card-footer">
                 <p class="card-footer-item">
-                    <button class="card-btn">
+                    <button id='nutritionBtn' class="card-btn">
                         Make My Meal Plan!
                     </button>
                 </p>
@@ -107,7 +109,9 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"
+        integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -90,50 +89,67 @@
             <img src="./assets/images/VEGAN.jpg" alt="Vegan Food Layout">
           </div>
       </div>
-    </div>
+    </main>
+    <section>
+      <div class="demo">
+        <form action="#">
+          <fieldset>
+            <label for="diet">Choose Your Diet</label>
+            <select name="diet" id="diet">
+              <option selected="selected">Vegetarian</option>
+              <option>Pescatarian</option>
+              <option>Vegan</option>
+              <option>Paleo</option>
+            </select>
 
-  </main>
-  <section>
-    <div class="demo">
-      <form action="#">
-        <fieldset>
-          <label for="diet">Choose Your Diet</label>
-          <select name="diet" id="diet">
-            <option selected="selected">Vegetarian</option>
-            <option>Pescatarian</option>
-            <option>Vegan</option>
-            <option>Paleo</option>
-          </select>
+            <!-- I added some code to change the intolerance section from a dropdown menu to a checkbox setup -->
+            <label for="intolerance">Select any dietary intolerances</label>
 
-          <label for="intolerance">Select your intolerances</label>
-          <select name="intolerance" id="intolerance">
-            <option value="jquery">Eggs</option>
-            <option value="jqueryui">Dairy</option>
-            <option value="somefile">gluten</option>
-            <option value="peanut">Peanuts</option>
-          </select>
+            <label for="checkbox-1">Peanuts</label>
+            <input type="checkbox" name="peanuts" id="checkbox-1" class="c2" />
 
-          <!-- <label for="number">Select a Calorie Range</label> -->
-          <form id="min-calories">
-            <label for="">Minimum calories</label>
-            <input type="text" class="min-input" />
-          </form>
+            <label for="checkbox-2">Dairy</label>
+            <input type="checkbox" name="dairy" id="checkbox-2" class="c2" />
 
-          <form id="max-calories">
-            <label for=""> Maximum calories</label>
-            <input type="text" class="max-input" />
-          </form>
+            <label for="checkbox-3">Gluten</label>
+            <input type="checkbox" name="gluten" id="checkbox-3" class="c2" />
+            <br />
+            <label for="checkbox-4">Eggs</label>
+            <input type="checkbox" name="eggs" id="checkbox-4" class="c2" />
 
-          <button class="submit_button">Submit</button>
-        </fieldset>
-      </form>
-      <div class="results">
+            <label for="checkbox-5">Shellfish</label>
+            <input
+              type="checkbox"
+              name="shellfish"
+              id="checkbox-5"
+              class="c2"
+            />
+
+            <label for="checkbox-6">Soy</label>
+            <input type="checkbox" name="Soy" id="checkbox-6" class="c2" />
+
+            <form id="min-calories">
+              <label for="">Minimum calories</label>
+              <input type="text" class="min-input" />
+            </form>
+
+            <form id="max-calories">
+              <label for=""> Maximum calories</label>
+              <input type="text" class="max-input" />
+            </form>
+
+            <button class="submit_button">Submit</button>
+          </fieldset>
+        </form>
+        <div class="results"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="./assets/js/nutritionScript.js"></script>
-  <footer>©Go For Fitness</footer>
-</body>
-
+    <script src="./assets/js/nutritionScript.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".r2, .c2").checkboxradio({});
+      });
+    </script>
+  </body>
 </html>
