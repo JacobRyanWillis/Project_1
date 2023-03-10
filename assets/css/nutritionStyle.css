@@ -27,7 +27,6 @@ h1 {
     font-size: 20px;
     padding: 5px;
     margin-top: 10px;
-
 }
 
 .title {
@@ -80,4 +79,11 @@ h1 {
 
 .nutrition3-img {
     margin-top: 60px;
+}
+
+footer {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
 }
