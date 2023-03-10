@@ -49,13 +49,13 @@ function displayWorkout(workout) {
   workoutDiv.addClass('workout');
   var h2 = $('<h2>')
   h2.addClass('exerciseName');
-  var gifDiv = $('<div>')
+  var gifImg = $('<img>')
 
 $('body').append(workoutDiv);
   workoutDiv.append(h2);
   h2.text(name);
-  workoutDiv.append(gifDiv);
-  gifDiv.attr('src', gifUrl);
+  workoutDiv.append(gifImg);
+  gifImg.attr('src', gifUrl);
 
 }
 
