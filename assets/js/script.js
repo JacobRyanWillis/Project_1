@@ -58,14 +58,18 @@ function displayWorkout(workout) {
 
 // this will be an event listener
 $(document).ready(function () {
-  // Attach click listener to all buttons with class "body-part-btn"
+  var selectedBodyParts = []; // initialize an empty array to store selected body parts
   $('.body-part-btn').click(function () {
     // Get the body part value from the data attribute
-    var bodyPart = $(this).data('body-part');
-    // Call getBodyPart with the selected body part value
-    getBodyPart(bodyPart);
+    var bodyPart = $(this).data('body-part').split(' ');
+    selectedBodyParts.push(bodyPart); // add selected body part to the array
+    if (selectedBodyParts.length >= 2) { // if two or more body parts are selected
+      // Call getBodyPart with each selected body part value
+      selectedBodyParts.forEach(function (part) {
+        getBodyPart(part);
+      });
+      selectedBodyParts = []; // reset the array for next selection
+    }
   });
 });
 
-// example code for HTML to implement my click listener.
-{/* <button class="body-part-btn" data-body-part="chest">Chest</button> */ }
