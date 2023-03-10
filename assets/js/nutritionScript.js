@@ -10,6 +10,7 @@ var intolleranceSelect = document.getElementById("intolerance");
 
 var apiCall;
 var currIndex;
+var currentRecipe;
 
 $(".submit_button").on("click", function(event) {
 	event.preventDefault();
@@ -55,8 +56,8 @@ $(".submit_button").on("click", function(event) {
 			var randIdx = Math.floor(Math.random() * response.results.length);
 			currIndex = response.results[randIdx].id;
 			$(".results").children("img").remove();
-			var recipeImage = $("<img>").attr("src", response.results[randIdx].image);
-			$(".results").append(recipeImage);
+			// var recipeImage = $("<img>").attr("src", response.results[randIdx].image);
+			// $(".results").append(recipeImage);
 
 			getRecipe(currIndex)
 		});
@@ -75,15 +76,53 @@ $(".submit_button").on("click", function(event) {
 			
 			$.ajax(settings2).done(function (response2) {
 				console.log(response2);
+				currentRecipe = response2;
 				$(".results").children("h2").remove();
 				$(".results").children("a").remove();
+				$(".results").children("button").remove();
 
-				var recipeTitle = $("<h2>").text(response2.title);
+
 				var recipleRealLink = response2.sourceUrl;
-				var recipeLink = $('<a href="'+recipleRealLink+'">'+'link to the recipe'+'</a>');
-				$(".results").append(recipeTitle, recipeLink);
+				var recipeLink = $('<a href="'+recipleRealLink+'">'+ response2.title +'</a>').addClass("linkRecipe");
+
+				var recipeImage = $("<img>").attr("src", response2.image);
+
+
+
+				var favoriteButton = $("<button>").text("Favorite this Recipe").addClass("favoriteButton");
+				$(".results").append(recipeLink, recipeImage, favoriteButton);
 			});
 		}	
 	}
 })
+
+$(document).on("click", ".favoriteButton", function(event) {
+	event.preventDefault();
+
+	var recipesArray = [];
+
+	var newFavoriteObject = [
+		title = currentRecipe.title,
+		link = currentRecipe.sourceUrl,
+		image = currentRecipe.image
+	]
+
+	// need to code in for if someone tries to add the same recipe twice
+	var holder = JSON.parse(localStorage.getItem("recipeObjects"));
+    
+    if (holder === null) {
+        recipesArray.push(newFavoriteObject);
+    } else {
+        recipesArray = holder;
+        recipesArray.push(newFavoriteObject);
+    }
+
+
+	localStorage.setItem("recipeObjects", JSON.stringify(recipesArray));
+
+
+  });
+
+  // I will need to make a div in the HTML to store the list of favorite recipes
+
 
