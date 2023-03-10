@@ -69,7 +69,6 @@ h1 {
 .card-content {
     text-align: center;
 }
-
 .nutrition1-img {
 
 }
@@ -80,4 +79,31 @@ h1 {
 
 .nutrition3-img {
     margin-top: 60px;
+
+.demo {
+    margin-left: 10px;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.results img {
+    max-width: 40vh;
+    margin-bottom: 10px;
+}
+
+.results a {
+    font-size: 20px;
+}
+
+.results .favoriteButton {
+    max-width: fit-content;
+}
+
+.test {
+    
+main
 }
