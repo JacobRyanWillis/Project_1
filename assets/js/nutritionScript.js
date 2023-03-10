@@ -119,10 +119,26 @@ $(document).on("click", ".favoriteButton", function(event) {
 
 
 	localStorage.setItem("recipeObjects", JSON.stringify(recipesArray));
+	var directLink = $('<a href="'+ currentRecipe.sourceUrl + '">'+ currentRecipe.title +'</a>').addClass("linkRecipe");
+	var directObjectAdd = $("<li>").append(directLink);
+	$(".favoritesList").append(directObjectAdd);
 
 
   });
 
   // I will need to make a div in the HTML to store the list of favorite recipes
 
+function init() {
+	var initialHolder = JSON.parse(localStorage.getItem("recipeObjects"));
+	if (initialHolder === null) {
+		return;
+	} else {
+		for (i = 0; i < initialHolder.length; i++) {
+			var newLink = $('<a href="'+ initialHolder[i][1] + '">'+ initialHolder[i][0] +'</a>').addClass("linkRecipe");
+			var newListObject = $("<li>").append(newLink);
+			$(".favoritesList").append(newListObject);
+		}
+	}
+}
 
+init();
