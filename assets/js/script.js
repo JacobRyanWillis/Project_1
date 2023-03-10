@@ -35,41 +35,47 @@ function getBodyPart(bodyPart) {
 }
 // Generates a random workout based on the data array passed to it.
 function randomWorkout(data) {
-  var exercises = data.results;
+  var exercises = data;
   var randomIndex = Math.floor(Math.random() * exercises.length);
   return exercises[randomIndex];
 }
 // Displays the workout: bodyPart, Gif, and name on the screen.
 function displayWorkout(workout) {
-  var bodyPart = workout.bodyPart;
+  // var bodyPart = workout.bodyPart;
   var gifUrl = workout.gifUrl;
   var name = workout.name;
 
-  // Update the HTML with the workout information
-  var bodyPartElem = $('#bodyPart');
-  var gifElem = $('#gif');
-  var nameElem = $('#name');
+  var workoutDiv = $('<div>');
+  workoutDiv.addClass('workout');
+  var h2 = $('<h2>')
+  h2.addClass('exerciseName');
+  var gifDiv = $('<div>')
 
-  bodyPartElem.text(bodyPart);
-  gifElem.attr('src', gifUrl);
-  nameElem.text(name);
+$('body').append(workoutDiv);
+  workoutDiv.append(h2);
+  h2.text(name);
+  workoutDiv.append(gifDiv);
+  gifDiv.attr('src', gifUrl);
+
 }
 
-
-// this will be an event listener
+// Event listener for exercise buttons.
 $(document).ready(function () {
-  var selectedBodyParts = []; // initialize an empty array to store selected body parts
-  $('.body-part-btn').click(function () {
-    // Get the body part value from the data attribute
-    var bodyPart = $(this).data('body-part').split(' ');
-    selectedBodyParts.push(bodyPart); // add selected body part to the array
-    if (selectedBodyParts.length >= 2) { // if two or more body parts are selected
-      // Call getBodyPart with each selected body part value
-      selectedBodyParts.forEach(function (part) {
-        getBodyPart(part);
-      });
-      selectedBodyParts = []; // reset the array for next selection
-    }
+  var selectedBodyParts = []; 
+  $('.card-btn').click(function () {
+    $('#hide-choices').hide();
+    var bodyParts = $(this).data('body-part').split(',');
+    selectedBodyParts.push(...bodyParts); 
+    // if there is multiple body-part data select a random one from said data.
+    if (selectedBodyParts.length != 1) {
+      var index = Math.floor(Math.random() * selectedBodyParts.length)
+      console.log(selectedBodyParts);
+      var bodyPart = selectedBodyParts[index];
+      getBodyPart(bodyPart);
+  } else {
+      getBodyPart(selectedBodyParts);
+  }
   });
+  selectedBodyParts = [];
 });
 
