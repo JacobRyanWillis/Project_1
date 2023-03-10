@@ -41,23 +41,35 @@ function randomWorkout(data) {
 }
 // Displays the workout: bodyPart, Gif, and name on the screen.
 function displayWorkout(workout) {
-  // var bodyPart = workout.bodyPart;
   var gifUrl = workout.gifUrl;
   var name = workout.name;
 
-  var workoutDiv = $('<div>');
-  workoutDiv.addClass('workout');
-  var h2 = $('<h2>')
-  h2.addClass('exerciseName');
-  var gifImg = $('<img>')
+// Creates Elements and Adds classes
+  var workoutDiv = $('.workout');
+  var h2 = $('<h2>').addClass('exerciseName');
+  var gifImg = $('<img>');
+  var youTubeLink = $('<a>');
+  var bttnDiv = $('.nextFavorite');
+  var favoriteBttn = $('<button>').addClass('column is-four-fifths favorite').text('Favorite this exercise.');
+  var nextBttn = $('<button>').addClass('column is-four-fifths nextExercise').text('Next Exercise!');
 
-$('body').append(workoutDiv);
+// Appends to the webpage and adds attributes
+  $('#workoutDiv').removeClass('is-hidden');
   workoutDiv.append(h2);
   h2.text(name);
   workoutDiv.append(gifImg);
   gifImg.attr('src', gifUrl);
-
+  youTubeLink.text('Click me to watch a video of the exercise.');
+  youTubeLink.attr('href', `https://www.youtube.com/results?search_query=${name}`);
+  youTubeLink.attr('target', '_blank');
+  youTubeLink.css('font-size', '20px');
+  youTubeLink.css('margin', '2rem');
+  workoutDiv.append(youTubeLink);
+  workoutDiv.append(bttnDiv);
+  bttnDiv.append(favoriteBttn);
+  bttnDiv.append(nextBttn);
 }
+
 
 // Event listener for exercise buttons.
 $(document).ready(function () {
