@@ -1,92 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="assets/css/fitness.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/npm/Bulma@0.9.1/css/Bulma.min.css">
+    <link rel="stylesheet" target="_blank" rel="noopener"
+        href="https://cdn.jsdelivr.net/npm/Bulma@0.9.1/css/Bulma.min.css">
     <title>Fitness</title>
 </head>
+
 <body>
-   
-<section>
-    <div class="header-div">
-        <H1>What area are we working today?</H1>
-    </div>
 
-        
-<div class="row">  
-    <div class="back card">
-     <div class="column">
-        <img class="card-image" 
-        src="assets/images/fitness images/back.jpg" 
-        alt="man's back" width="300" height="200" />
-    </div>
-        <div class="back-container">
-            <h2>Back</h2>
+    <section class="main" id="hide-choices">
+        <div class="header-div">
+            <h1>What would you like to work on today?</h1>
         </div>
-     </div>
-    </div>   
 
-    
-    <div class="chest card">
-        <div class="column">
-            <img Class="card-image"
-            src="assets/images/fitness images/chest.jpg"
-            alt="bench press" width="300" height="200" />
-            <div class="chest-container">
-                <h2>Chest</h2>
-            </div>    
-        </div>
-    </div>
-
-    <div class="abs card">
-        <div class="column"></div>
-            <img class="card-image" 
-            src="assets/images/fitness images/abs.jpg"
-            alt="lady doing crunch" width="300" height="200" />
-            <div class="abs-container">
-                <h2>Abs</h2>
+        <section class="card-div">
+            <div class="card has-background-primary-light">
+                <div class="card-content">
+                    <p class="title">
+                        Back
+                    </p>
+                </div>
+                <div class="card-image">
+                    <a href="https://bulma.io/documentation/components/card/"><img class="card-image"
+                            src="assets/images/fitness images/back.jpg" alt="man's back" width="300" height="200" /></a>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">
+                        <button id='fitnessBtn' class="card-btn">
+                            Back
+                        </button>
+                    </p>
+                </footer>
             </div>
-        </div>
-    </div>
-</div>  
-   
-    <div class="squat card">
-    
-        <img src="assets/images/fitness images/legs.jpg"
-        alt="lady doing a squat" width="300" height="200"/>
-        <div squatcontainer>
-            <h2>Squat</h2>
-        </div>
-    </div>
-        
-    <div class="arms card">    
-        <img src="assets/images/fitness images/arms.jpg"
-        alt="lifting wbarbell" width="300" height="200"/>
-        <div armcard>
-            <h2>Arm</h2>
-        </div>
-    </div>
 
-    <div class="cardiocard">
-        <img src="assets/images/fitness images/cardio.jpg"
-        alt="man running" width="300" height="200" />
-        <div cardio>
-            <h2>Cardio</h2>
-        </div>
-    </div>
-    </div>
-        
-</section>
-   
+            <div class="card has-background-primary-light">
+                <div class="card-content">
+                    <p class="title">
+                        Chest
+                    </p>
+                </div>
+                <div class="card-image">
+                    <a href="https://bulma.io/documentation/components/card/"><img Class="card-image"
+                            src="assets/images/fitness images/chest.jpg" alt="bench press" width="300"
+                            height="200" /></a>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">
+                        <button id='fitnessBtn' class="card-btn">
+                            Chest
+                        </button>
+                    </p>
+                </footer>
+            </div>
+
+            <div class="card has-background-primary-light">
+                <div class="card-content">
+                    <p class="title">
+                        Abs
+                    </p>
+                </div>
+                <div class="card-image">
+                    <a href="https://bulma.io/documentation/components/card/"><img class="card-image"
+                            src="assets/images/fitness images/abs.jpg" alt="lady doing crunch" width="300"
+                            height="200" /></a>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">
+                        <button id='fitnessBtn' class="card-btn">
+                            Abs
+                        </button>
+                    </p>
+                </footer>
+            </div>
+
+            <div class="card has-background-primary-light">
+                <div class="card-content">
+                    <p class="title">
+                        Legs
+                    </p>
+                </div>
+                <div class="card-image">
+                    <a href="https://bulma.io/documentation/components/card/"><img
+                            src="assets/images/fitness images/legs.jpg" alt="lady doing a squat" width="300"
+                            height="200" /></a>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">
+                        <button id='fitnessBtn' class="card-btn">
+                            Legs
+                        </button>
+                    </p>
+                </footer>
+            </div>
+
+            <div class="card has-background-primary-light">
+                <div class="card-content">
+                    <p class="title">
+                        Arms
+                    </p>
+                </div>
+                <div class="card-image">
+                    <a href="https://bulma.io/documentation/components/card/"><img
+                            src="assets/images/fitness images/arms.jpg" alt="lifting wbarbell" width="300"
+                            height="200" /></a>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">
+                        <button id='fitnessBtn' class="card-btn">
+                            Arms
+                        </button>
+                    </p>
+                </footer>
+            </div>
+
+            <div class="card has-background-primary-light">
+                <div class="card-content">
+                    <p class="title">
+                        Cardio
+                    </p>
+                </div>
+                <div class="card-image">
+                    <a href="https://bulma.io/documentation/components/card/"><img
+                            src="assets/images/fitness images/cardio.jpg" alt="man running" width="300"
+                            height="200" /></a>
+                </div>
+                <footer class="card-footer">
+                    <p class="card-footer-item">
+                        <button id='fitnessBtn' class="card-btn">
+                            Cardio
+                        </button>
+                    </p>
+                </footer>
+            </div>
+        </section>
+
+    </section>
 
 
-    
+
+
 </body>
 
 <footer>
-    <h6>Consult a physician before starting a workout program *Don’t over work yourself! *Stay Hydrated! </h6> 
- </footer>
+    <h6>Consult a physician before starting a workout program *Don’t over work yourself! *Stay Hydrated! </h6>
+</footer>
+
 </html>

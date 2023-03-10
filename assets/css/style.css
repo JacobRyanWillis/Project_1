@@ -66,7 +66,6 @@
     align-items: center;
     justify-content: center;
     -webkit-filter: grayscale(50%);
-    /* Safari 6.0 - 9.0 */
     filter: grayscale(50%);
 }
 
@@ -94,5 +93,6 @@
 }
 
 .it-span {
-    color: #FEC9FB;
+    /* color: #FEC9FB; */
+    color: #5882F8;
 }

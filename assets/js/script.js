@@ -2,17 +2,17 @@ var fitnessBtn = $('#fitnessBtn');
 var nutritionBtn = $('#nutritionBtn');
 var exercises = [];
 
-$(document).ready(function() {
-    fitnessBtn.click(function() {
-      location.href = 'fitness.html';
-    });
+$(document).ready(function () {
+  fitnessBtn.click(function () {
+    location.href = 'fitness.html';
   });
-  
-$(document).ready(function() {
-    nutritionBtn.click(function() {
-      location.href = 'nutrition.html';
-    });
+});
+
+$(document).ready(function () {
+  nutritionBtn.click(function () {
+    location.href = 'nutrition.html';
   });
+});
 
 // Gets exercise based on body part passed into the parameter.
 function getBodyPart(bodyPart) {
@@ -57,9 +57,9 @@ function displayWorkout(workout) {
 
 
 // this will be an event listener
-$(document).ready(function() {
+$(document).ready(function () {
   // Attach click listener to all buttons with class "body-part-btn"
-  $('.body-part-btn').click(function() {
+  $('.body-part-btn').click(function () {
     // Get the body part value from the data attribute
     var bodyPart = $(this).data('body-part');
     // Call getBodyPart with the selected body part value
@@ -68,4 +68,4 @@ $(document).ready(function() {
 });
 
 // example code for HTML to implement my click listener.
-<button class="body-part-btn" data-body-part="chest">Chest</button>
+{/* <button class="body-part-btn" data-body-part="chest">Chest</button> */ }
