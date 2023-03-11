@@ -121,3 +121,31 @@
     /* color: #FEC9FB; */
     color: #5882F8;
 }
+
+@media screen and (max-width: 768px) {
+    .hero {
+        text-align: center;
+        background-position: center;
+    }
+
+    #logo {
+        height: auto;
+        width: auto;
+    }
+
+    .main-header,
+    .main-p {
+        padding: 1rem;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        margin: 1rem;
+    }
+}
