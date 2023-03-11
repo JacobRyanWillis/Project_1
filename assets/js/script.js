@@ -44,49 +44,55 @@ function displayWorkout(workout) {
   var gifUrl = workout.gifUrl;
   var name = workout.name;
 
-// Creates Elements and Adds classes
+  // Creates Elements and Adds classes
   var workoutDiv = $('.workout');
   var h2 = $('<h2>').addClass('exerciseName');
   var gifImg = $('<img>');
   var youTubeLink = $('<a>');
   var bttnDiv = $('.nextFavorite');
-  var favoriteBttn = $('<button>').addClass('column is-four-fifths favorite').text('Favorite this exercise.');
-  var nextBttn = $('<button>').addClass('column is-four-fifths nextExercise').text('Next Exercise!');
+  // var favoriteBttn = $('<button>').addClass('column is-four-fifths favorite').text('Favorite this exercise.');
+  var favoriteBttn = $('#fitnessBtn1').text('Favorite this exercise');
+  // var nextBttn = $('<button>').addClass('column is-four-fifths nextExercise').text('Next Exercise!');
+  var nextBttn = $('#fitnessBtn2').text("Next Exercise!");
 
-// Appends to the webpage and adds attributes
+  // Appends to the webpage and adds attributes
   $('#workoutDiv').removeClass('is-hidden');
-  workoutDiv.append(h2);
+  // workoutDiv.append(h2);
+  $(".title").append(h2);
   h2.text(name);
-  workoutDiv.append(gifImg);
+  // workoutDiv.append(gifImg);
+  $(".card-image").append(gifImg);
   gifImg.attr('src', gifUrl);
   youTubeLink.text('Click me to watch a video of the exercise.');
   youTubeLink.attr('href', `https://www.youtube.com/results?search_query=${name}`);
   youTubeLink.attr('target', '_blank');
   youTubeLink.css('font-size', '20px');
   youTubeLink.css('margin', '2rem');
-  workoutDiv.append(youTubeLink);
-  workoutDiv.append(bttnDiv);
-  bttnDiv.append(favoriteBttn);
-  bttnDiv.append(nextBttn);
+  // workoutDiv.append(youTubeLink);
+  $(".card-content").append(youTubeLink);
+  // workoutDiv.append(bttnDiv);
+  // $(".card-btn").append(bttnDiv);
+  // bttnDiv.append(favoriteBttn);
+  // bttnDiv.append(nextBttn);
 }
 
 
 // Event listener for exercise buttons.
 $(document).ready(function () {
-  var selectedBodyParts = []; 
+  var selectedBodyParts = [];
   $('.card-btn').click(function () {
     $('#hide-choices').hide();
     var bodyParts = $(this).data('body-part').split(',');
-    selectedBodyParts.push(...bodyParts); 
+    selectedBodyParts.push(...bodyParts);
     // if there is multiple body-part data select a random one from said data.
     if (selectedBodyParts.length != 1) {
       var index = Math.floor(Math.random() * selectedBodyParts.length)
       console.log(selectedBodyParts);
       var bodyPart = selectedBodyParts[index];
       getBodyPart(bodyPart);
-  } else {
+    } else {
       getBodyPart(selectedBodyParts);
-  }
+    }
   });
   selectedBodyParts = [];
 });
