@@ -87,19 +87,23 @@ body {
     margin: 1rem;
 }
 
-.disclaimer {text-align: center;
+.disclaimer {
+    text-align: center;
     font-size: 1rem;
-    color: grey;}
+    color: grey;
+}
 
 
-    .copyright {
-        /* background-color: black; */
-        color: white;
-        text-align: center;
-        padding: 1rem;
-    }    
+.copyright {
+    /* background-color: black; */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
 
-.it-head {color: #5882F8}
+.it-head {
+    color: #5882F8
+}
 
 .workout {
     display: flex;
@@ -110,7 +114,7 @@ body {
 }
 
 .exerciseName {
-    color: white;
+    /* color: white; */
     font-size: 3rem;
     margin: 2rem;
 }
@@ -126,3 +130,32 @@ body {
     padding: 2rem;
 }
 
+.card-2 {
+    height: 45rem;
+    width: 40rem;
+    text-align: center;
+}
+
+#fitnessBtn1,
+#fitnessBtn2 {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card-div {
+        height: auto;
+    }
+
+    .workout {
+        height: auto;
+    }
+
+    .card-2 {
+        width: 100vw;
+        height: auto;
+    }
+
+    .card-btn2 {
+        width: auto;
+    }
+}
