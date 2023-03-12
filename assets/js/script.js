@@ -15,6 +15,14 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function() {
+  $('.navbar-burger').click(function() {
+    $(this).toggleClass('is-active');
+    $('#navbarBasicExample').slideToggle();
+  });
+});
+
+  
 // Gets exercise based on body part passed into the parameter.
 function getBodyPart(bodyPart) {
   var settings = {
