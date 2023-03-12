@@ -12,34 +12,6 @@ body {
     background-color: black;
 }
 
-
-
-/* .back-container {
-    background-color: aliceblue;
-    width: 300px;
-}
-
-.chest-container {
-    background-color: aliceblue;
-    width: 300px;
-}
-
-.abs-container {
-    background-color: aliceblue;
-    width: 300px;
-}
-
-.column {
-    float: left;
-    padding: 5px;
-}
-
-.row ::after {
-    content: "";
-    clear: both;
-    display: table;
-} */
-
 .header-div {
     font-size: 2rem;
     color: white;
@@ -95,7 +67,6 @@ body {
 
 
 .copyright {
-    /* background-color: black; */
     color: white;
     text-align: center;
     padding: 1rem;
@@ -145,5 +116,11 @@ body {
 
     .card-btn2 {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 1725px) {
+    .card-div {
+        height: auto;
     }
 }
