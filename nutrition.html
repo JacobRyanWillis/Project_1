@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/nutritionStyle.css" />
 
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
 
   <style>
     fieldset {
@@ -39,6 +38,7 @@
 <body>
   <header>
     <h1>Nutr<b class="it-head">it</b>ion & Recipes</h1>
+    <button class="homeBttn">HOME</button>
   </header>
   <div class="health-is-wealth has-background-black">
     <h2 class="title" id="title-line">Health is Wealth!</h2>
@@ -124,19 +124,26 @@
               <input type="checkbox" name="peanuts" id="checkbox-1" class="c2" />
               </label>
 
-              <label class="checkbox" for="checkbox-2">Dairy</label>
+              <label class="checkbox" for="checkbox-2">Dairy
               <input type="checkbox" name="dairy" id="checkbox-2" class="c2" />
+              </label>  
 
-              <label class="checkbox" for="checkbox-3">Gluten</label>
+              <label class="checkbox" for="checkbox-3">Gluten
               <input type="checkbox" name="gluten" id="checkbox-3" class="c2" />
-              <label class="checkbox" for="checkbox-4">Eggs</label>
+              </label>
+
+
+              <label class="checkbox" for="checkbox-4">Eggs
               <input type="checkbox" name="eggs" id="checkbox-4" class="c2" />
+              </label>
 
-              <label class="checkbox" for="checkbox-5">Shellfish</label>
+              <label class="checkbox" for="checkbox-5">Shellfish
               <input type="checkbox" name="shellfish" id="checkbox-5" class="c2" />
+              </label>
 
-              <label class="checkbox" for="checkbox-6">Soy</label>
+              <label class="checkbox" for="checkbox-6">Soy
               <input type="checkbox" name="Soy" id="checkbox-6" class="c2" />
+              </label>
 
               <form id="min-calories">
                 <label for="">Minimum calories</label>
@@ -173,70 +180,8 @@
 
   <footer class="has-background-black">©Go For F<b class="it-head">it</b>ness</footer>
 
-  <!-- <div class="demo">
-        <h2> Find a Healthy Recipe</h2>
-        <form action="#">
-          <fieldset>
-            <label for="diet" class="topLabel">Choose Your Diet</label>
-            <select name="diet" id="diet">
-              <option selected="selected">Vegetarian</option>
-              <option>Pescatarian</option>
-              <option>Vegan</option>
-              <option>Paleo</option>
-            </select>
-
-            
-            <label for="intolerance">Select any dietary intolerances</label>
-
-            <label for="checkbox-1">Peanuts</label>
-            <input type="checkbox" name="peanuts" id="checkbox-1" class="c2" />
-
-            <label for="checkbox-2">Dairy</label>
-            <input type="checkbox" name="dairy" id="checkbox-2" class="c2" />
-
-            <label for="checkbox-3">Gluten</label>
-            <input type="checkbox" name="gluten" id="checkbox-3" class="c2" />
-            <br />
-            <label for="checkbox-4">Eggs</label>
-            <input type="checkbox" name="eggs" id="checkbox-4" class="c2" />
-
-            <label for="checkbox-5">Shellfish</label>
-            <input type="checkbox" name="shellfish" id="checkbox-5" class="c2" />
-
-            <label for="checkbox-6">Soy</label>
-            <input type="checkbox" name="Soy" id="checkbox-6" class="c2" />
-
-            <form id="min-calories">
-              <label for="">Minimum calories</label>
-              <input type="text" class="min-input" />
-            </form>
-
-            <form id="max-calories">
-              <label for=""> Maximum calories</label>
-              <input type="text" class="max-input" />
-            </form>
-
-            <button class="submit_button">Submit</button>
-          </fieldset>
-        </form>
-        <div class="results">
-
-        </div>
-      </div> -->
-
-  <!-- <div class="local-favorites">
-          <h2>Favorite Recipes:</h2>
-          <ul class="favoritesList">
-          </ul>
-        </div> -->
-
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="./assets/js/nutritionScript.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".r2, .c2").checkboxradio({});
-    });
-  </script>
 </body>
 
 

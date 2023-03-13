@@ -26,6 +26,22 @@ header {
 
 h1 {
     font-size: 30px;
+    /* padding: 1rem; */
+    padding: 1rem;
+}
+
+.homeBttn {
+
+    position: relative;
+    left: 75vh;
+    font-size: 30px;
+    background-color: var(--black);
+    color: white;
+    border: none;
+}
+
+.homeBttn:hover {
+    background-color: #0a0a0a;
 }
 
 
@@ -151,7 +167,12 @@ fieldset label {
     background-color: black;
     color: white;
     border-radius: .5rem;
+    width: 25%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
 }
+
 
 /* copyright styles */
 footer {
