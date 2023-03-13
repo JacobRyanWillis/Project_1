@@ -2,10 +2,17 @@ var fitnessBtn = $('#fitnessBtn');
 var nutritionBtn = $('#nutritionBtn');
 var exercises = [];
 var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+var homeBttn = $('.homeBttn');
 
 $(document).ready(function () {
   fitnessBtn.click(function () {
     location.href = 'fitness.html';
+  });
+});
+
+$(document).ready(function () {
+  homeBttn.click(function () {
+    location.href = 'index.html';
   });
 });
 

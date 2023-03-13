@@ -12,6 +12,14 @@ var apiCall;
 var currIndex;
 var currentRecipe;
 
+
+// For home button
+$(document).ready(function () {
+	homeBttn.click(function () {
+	  location.href = 'index.html';
+	});
+  });
+
 $(".submit_button").on("click", function(event) {
 	event.preventDefault();
 
