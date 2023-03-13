@@ -113,6 +113,13 @@ $(document).on("click", ".favoriteButton", function(event) {
     if (holder === null) {
         recipesArray.push(newFavoriteObject);
     } else {
+
+		for (i = 0; i < holder.length; i++) {
+			debugger;
+			if (currentRecipe.title == holder[i][0]) {
+				return;
+			}
+		}
         recipesArray = holder;
         recipesArray.push(newFavoriteObject);
     }
