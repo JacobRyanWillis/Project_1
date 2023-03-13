@@ -137,9 +137,9 @@ fieldset label {
     text-align: center;
 }
 
-.recipeImages {
-    /* max-height: 250px; */
-}
+/* .recipeImages {
+    max-height: 250px;
+} */
 
 .submit_button {
     font-size: 20px;
@@ -150,7 +150,9 @@ fieldset label {
 .checkbox {
     background-color: black;
     color: white;
-    border-radius: .5rem;
+    border-radius: .2rem;
+    width: 30%;
+    line-height: 1.50;
 }
 
 /* copyright styles */
