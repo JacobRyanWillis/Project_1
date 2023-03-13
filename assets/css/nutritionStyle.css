@@ -35,16 +35,6 @@ h1 {
     padding: 1rem;
 }
 
-.homeBttn {
-
-    position: relative;
-    left: 75vh;
-    font-size: 30px;
-    background-color: var(--black);
-    color: white;
-    border: none;
-}
-
 .homeBttn:hover {
     background-color: #0a0a0a;
 }
