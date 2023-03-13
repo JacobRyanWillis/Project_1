@@ -12,6 +12,7 @@
     --black: black;
 }
 
+/* header styles */
 header {
     background-color: black;
     display: flex;
@@ -27,10 +28,11 @@ h1 {
     font-size: 30px;
 }
 
-.submit_button {
-    font-size: 20px;
-    padding: 5px;
-    margin-top: 10px;
+
+
+/* quote styles */
+.health-is-wealth {
+    padding-left: 5rem;
 }
 
 .title {
@@ -53,16 +55,13 @@ h1 {
     color: lightgrey;
 }
 
-/* .nutrition {}
-
-.nutrition-plan {} */
-
+/* main styles */
 .main {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 5rem;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -70,8 +69,13 @@ h1 {
     width: 25rem;
 }
 
+fieldset label {
+    margin-top: 25px;
+}
+
 .card-contents {
     text-align: center;
+    /* padding-bottom: 8px; */
 }
 
 .card-contents-1 {
@@ -79,31 +83,20 @@ h1 {
     margin: 0;
 }
 
-.nutrition1-img {
-    width: 100%;
-}
 
-.recipe-holder {
-    display: flex;
-    flex-direction: row;
-}
-
+/* form styles */
 .demo {
-    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
 }
 
-.demo h2 {
-    font-size: 30px;
-    margin-bottom: 5px;
-}
 
 .topLabel {
     margin-top: 0px;
 }
 
 .results {
-    display: flex;
-    flex-direction: column;
     margin-top: 10px;
 }
 
@@ -132,10 +125,62 @@ h1 {
 
 }
 
+.recipe-card {
+    height: 56rem;
+    width: 30rem;
+    text-align: center;
+}
 
+.recipe-card2 {
+    height: 56rem;
+    width: 30rem;
+    text-align: center;
+}
+
+.recipeImages {
+    /* max-height: 250px; */
+}
+
+.submit_button {
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.checkbox {
+    background-color: black;
+    color: white;
+    border-radius: .5rem;
+}
+
+/* copyright styles */
 footer {
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* media queries */
+@media screen and (max-width: 800px) {
+    .health-is-wealth {
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .card {
+        margin: 1rem;
+    }
+
+    .demo {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

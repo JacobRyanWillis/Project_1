@@ -111,17 +111,17 @@
 
 /* footer styles */
 .copyright {
-    /* background-color: black; */
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
 .it-span {
-    /* color: #FEC9FB; */
     color: #5882F8;
 }
 
+
+/* media queries */
 @media screen and (max-width: 768px) {
     .hero {
         text-align: center;
@@ -143,9 +143,18 @@
         flex-wrap: nowrap;
         flex-direction: column;
         height: auto;
+        padding-bottom: 0;
     }
 
     .card {
         margin: 1rem;
+    }
+
+    .about-us {
+        height: auto;
+    }
+
+    .card-2 {
+        height: auto;
     }
 }
