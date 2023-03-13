@@ -135,15 +135,12 @@ fieldset label {
 }
 
 .local-favorites {
-    min-width: 50vh;
-    position: absolute;
-    right: 0%;
+    text-align: center;
 }
 
 .local-favorites h2 {
     font-size: 30px;
     margin-bottom: 5px;
-
 }
 
 .recipe-card {
