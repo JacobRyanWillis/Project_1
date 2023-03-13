@@ -3,7 +3,7 @@
 // General Notes
 
 // 
-
+var homeBttn = $('.homeBttn');
 var skillsSelect = document.getElementById("diet");
 var intolleranceSelect = document.getElementById("intolerance");
 
