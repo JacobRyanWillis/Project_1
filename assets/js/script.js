@@ -131,6 +131,10 @@ $(document).ready(function () {
 $(document).ready(function () { 
   $('.favoritesBttn').on('click', function() {
     $('#hide-choices').hide();
+    if (favorites.length === 0) {
+      alert('You have no favorites!');
+      return;
+    }
     favorites.forEach(function(favorite) {
       displayWorkout(favorite);
     });
