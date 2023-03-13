@@ -69,8 +69,13 @@ h1 {
     width: 25rem;
 }
 
+fieldset label {
+    margin-top: 25px;
+}
+
 .card-contents {
     text-align: center;
+    /* padding-bottom: 8px; */
 }
 
 .card-contents-1 {
@@ -130,6 +135,10 @@ h1 {
     height: 56rem;
     width: 30rem;
     text-align: center;
+}
+
+.recipeImages {
+    /* max-height: 250px; */
 }
 
 .submit_button {
