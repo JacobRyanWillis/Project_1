@@ -12,6 +12,12 @@ body {
     background-color: black;
 }
 
+.logo-nav {
+    padding-left: 2rem;
+    height: 70px;
+    width: 200px;
+}
+
 .header-div {
     font-size: 2rem;
     color: white;
