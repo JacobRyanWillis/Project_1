@@ -153,9 +153,9 @@ fieldset label {
     text-align: center;
 }
 
-.recipeImages {
-    /* max-height: 250px; */
-}
+/* .recipeImages {
+    max-height: 250px;
+} */
 
 .submit_button {
     font-size: 20px;
