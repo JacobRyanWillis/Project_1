@@ -13,8 +13,13 @@
 }
 
 /* header styles */
+.logo-nav {
+    padding-left: 2rem;
+    height: 70px;
+    width: 200px;
+}
+
 header {
-    background-color: black;
     display: flex;
     justify-content: center;
     color: white;
