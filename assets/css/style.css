@@ -126,6 +126,7 @@
     .hero {
         text-align: center;
         background-position: center;
+        height: auto;
     }
 
     #logo {
