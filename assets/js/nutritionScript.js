@@ -118,7 +118,6 @@ $(document).on("click", ".favoriteButton", function(event) {
     } else {
 
 		for (i = 0; i < holder.length; i++) {
-			debugger;
 			if (currentRecipe.title == holder[i][0]) {
 				return;
 			}
