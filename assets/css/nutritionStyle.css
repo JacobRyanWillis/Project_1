@@ -206,4 +206,12 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+
+    .checkbox {
+        width: 45%;
+    }
+
+    .recipe-card2 {
+        height: auto;
+    }
 }
