@@ -77,6 +77,7 @@ function displayWorkout(workout) {
   var favoriteBttn = button1.text('Favorite this exercise');
   var nextBttn = button2.text("Next Exercise!");
 
+
   // Appends elements
   buttonContainer.append(button1, button2);
   footerDiv.append(buttonContainer);
@@ -98,19 +99,29 @@ function displayWorkout(workout) {
   nextBttn.on('click', function() {
     location.href = 'fitness.html';
   })
+
   // Stores exercise into local storage if they favorite the exercise.
   favoriteBttn.on('click', function() {
     var isFavorite = favorites.some(function(favorite) {
       return favorite.name === workout.name;
     });
     if (isFavorite) {
-      alert('Exercise is already in favorites!');
+      var message = $("<p>").text("Exercise is already in favorites!").addClass("message");
+      $(".card-content").append(message);
+      setTimeout(function() {
+        message.fadeOut();
+      }, 3000);
     } else {
       favorites.push(workout);
       localStorage.setItem('favorites', JSON.stringify(favorites));
-      alert('Exercise added to favorites!');
+      var message = $("<p>").text("Exercise added to favorites!").addClass("message");
+      $(".card-content").append(message);
+      setTimeout(function() {
+        message.fadeOut();
+      }, 3000);
     }
-  })
+  });
+  
 }
 
 
