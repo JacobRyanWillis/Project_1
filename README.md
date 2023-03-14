@@ -26,11 +26,11 @@ These developers did an amazing job on this project:
 <pre> Raiya Young - HTML/CSS </pre>
 <pre> LaChaznie Moore - HTML/CSS </pre>
 
-APIs:
-ExerciseDB: https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/
+APIs: <br>
+ExerciseDB: https://rapidapi.com/justin-WFnsXH_t6/api/exercisedb/ <br>
 Recipe-Food-Nutrition: https://rapidapi.com/spoonacular/api/recipe-food-nutrition
 
-JQuery: https://jquery.com/
+JQuery: https://jquery.com/ <br>
 Bulma: https://bulma.io/documentation/columns/basics/
 
 ## License
