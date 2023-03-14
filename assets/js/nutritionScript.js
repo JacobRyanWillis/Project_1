@@ -48,6 +48,11 @@ $(".submit_button").on("click", function(event) {
 	} else if (isNaN(minCalories) || isNaN(maxCalories)) {
 		return;
 	} else {
+		$(".results").children("h2").remove();
+		$(".results").children("a").remove();
+		$(".results").children("button").remove();
+		$(".results").children("img").remove();
+
 		apiCall = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/complexSearch?diet=" + selectedTextDiet + selectedTextIntollerance + "&minCalories=" + minCalories + "&maxCalories=" + maxCalories;
 		const settings = {
 			"async": true,
@@ -63,10 +68,6 @@ $(".submit_button").on("click", function(event) {
 		$.ajax(settings).done(function (response) {
 			var randIdx = Math.floor(Math.random() * response.results.length);
 			currIndex = response.results[randIdx].id;
-			$(".results").children("img").remove();
-			// var recipeImage = $("<img>").attr("src", response.results[randIdx].image);
-			// $(".results").append(recipeImage);
-
 			getRecipe(currIndex)
 		});
 		
@@ -85,10 +86,7 @@ $(".submit_button").on("click", function(event) {
 			$.ajax(settings2).done(function (response2) {
 				console.log(response2);
 				currentRecipe = response2;
-				$(".results").children("h2").remove();
-				$(".results").children("a").remove();
-				$(".results").children("button").remove();
-
+				
 
 				var recipleRealLink = response2.sourceUrl;
 				var recipeLink = $('<a href="'+recipleRealLink+'">'+ response2.title +'</a>').addClass("linkRecipe");
