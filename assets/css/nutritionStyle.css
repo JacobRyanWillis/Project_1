@@ -94,6 +94,10 @@ fieldset label {
     margin: 0;
 }
 
+/* .card-content p {
+    overflow: auto;
+} */
+
 .quote {
     font-size: 20px;
     font-weight: bolder;
@@ -151,9 +155,12 @@ fieldset label {
     text-align: center;
 }
 
-/* .recipeImages {
-    max-height: 250px;
-} */
+.results .recipeImage {
+    height: auto;
+    max-width: 100%;
+    /* max-height: 100%; */
+
+}
 
 .submit_button {
     font-size: 20px;
