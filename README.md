@@ -13,7 +13,7 @@ If you would wish to use the API's we used in our project check out the credits 
 
 ## Usage
 
-Deployed Website: 
+Deployed Website: https://jacobryanwillis.github.io/Your_Digital_Personal_Trainer/
 
 Website Screenshot: 
 ![Website_Screenshot](assets/images/website%20Screenshot.png)
