@@ -91,10 +91,7 @@ $(".submit_button").on("click", function(event) {
 				var recipleRealLink = response2.sourceUrl;
 				var recipeLink = $('<a href="'+recipleRealLink+'">'+ response2.title +'</a>').addClass("linkRecipe");
 
-				var recipeImage = $("<img>").attr("src", response2.image);
-
-
-
+				var recipeImage = $("<img>").attr("src", response2.image).addClass("recipeImage");
 				var favoriteButton = $("<button>").text("Favorite this Recipe").addClass("favoriteButton");
 				$(".results").append(recipeLink, recipeImage, favoriteButton);
 			});
