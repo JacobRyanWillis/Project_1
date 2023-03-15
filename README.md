@@ -16,7 +16,8 @@ If you would wish to use the API's we used in our project check out the credits 
 Deployed Website: https://jacobryanwillis.github.io/Your_Digital_Personal_Trainer/
 
 Website Screenshot: 
-![Website_Screenshot](assets/images/website%20Screenshot.png)
+![Website_Screenshot](assets/images/go-for-fitness-screenshot-half1.png)
+![Website_Screenshot](assets/images/go-for-fitness-screenshot-half2.png)
 
 ## Credits
 
